@@ -15,6 +15,7 @@ tests/bin/
 *.su
 *.gch
 *.pch
+.last_dir
 
 # IDE and editor settings
 .vscode/
