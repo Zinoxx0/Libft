@@ -7,6 +7,7 @@
 
 #define TEST_DIR "./tests/bin"
 #define MAX_TESTS 128
+#define PAGE_SIZE 15
 
 static void	clear_screen(void)
 {
@@ -59,9 +60,10 @@ static int	cmp_tests(const void *a, const void *b)
 	return (strcmp(*left, *right));
 }
 
-static void	print_menu(char **tests, int count)
+static void	print_menu(char **tests, int count, int page_start)
 {
 	int	i;
+	int	page_end;
 
 	printf("\n");
 	printf("\033[1;32m========== Libft Tester by Samercad! ==========\033[0m\n");
@@ -70,13 +72,19 @@ static void	print_menu(char **tests, int count)
 	printf("  \033[1;33mlist\033[0m       - list available tests\n");
 	printf("  \033[1;33mexit\033[0m       - quit\n");
 	printf("\n\033[1;34mAvailable tests:\033[0m\n");
-	i = 0;
-	while (i < count)
+	page_end = page_start + PAGE_SIZE;
+	if (page_end > count)
+		page_end = count;
+	i = page_start;
+	while (i < page_end)
 	{
 		printf("  [\033[1;33m%2d\033[0m] %s%s\n", i + 1, tests[i],
 			is_bonus(tests[i]) ? "  [bonus]" : "");
 		i++;
 	}
+	printf("\n  \033[1;33mn\033[0m - next page  |  \033[1;33mb\033[0m - previous page\n");
+	printf("\nPage %d/%d\n", page_start / PAGE_SIZE + 1,
+		(count + PAGE_SIZE - 1) / PAGE_SIZE);
 	printf("\n> ");
 }
 
@@ -159,6 +167,7 @@ int	main(void)
 	int		i;
 	int		found;
 	int		wrong_attempts;
+	int		page_start;
 
 	count = load_tests(tests);
 	qsort(tests, count, sizeof(*tests), cmp_tests);
@@ -169,11 +178,13 @@ int	main(void)
 		return (1);
 	}
 	wrong_attempts = 0;
+	page_start = 0;
+	clear_screen();
 	while (1)
 	{
 		if (wrong_attempts == 0 || wrong_attempts >= 10)
 		{
-			print_menu(tests, count);
+			print_menu(tests, count, page_start);
 			wrong_attempts = 0;
 		}
 		else
@@ -185,6 +196,28 @@ int	main(void)
 		input[strcspn(input, "\n")] = '\0';
 		if (strcmp(input, "exit") == 0 || strcmp(input, "q") == 0)
 			break ;
+		if (strcmp(input, "n") == 0)
+		{
+			if (page_start + PAGE_SIZE < count)
+				page_start += PAGE_SIZE;
+			else
+			{
+				clear_screen();
+				printf("\033[1;31mThis is the last page already!!!\033[0m\n");
+				continue ;
+			}
+			clear_screen();
+			continue ;
+		}
+		if (strcmp(input, "b") == 0)
+		{
+			clear_screen();
+			if (page_start == 0)
+				printf("\033[1;31mThis is the first page!!!\033[0m\n");
+			else
+				page_start -= PAGE_SIZE;
+			continue ;
+		}
 		if (strcmp(input, "list") == 0)
 		{
 			clear_screen();
