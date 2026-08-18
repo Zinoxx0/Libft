@@ -1,0 +1,33 @@
+# Binaries and object files
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Compiled binaries in tests directory
+tests/bin/
+
+# Debug and profiling
+*.dSYM/
+*.su
+*.gch
+*.pch
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build artifacts
+*.out
+build/
+dist/
+
+# Temporary files
+*.tmp
+*.bak
