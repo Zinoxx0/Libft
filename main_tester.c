@@ -8,6 +8,11 @@
 #define TEST_DIR "./tests/bin"
 #define MAX_TESTS 128
 
+static void	clear_screen(void)
+{
+	system("clear");
+}
+
 static int	is_bonus(const char *name)
 {
 	return (strncmp(name, "ft_lst", 6) == 0);
@@ -59,18 +64,17 @@ static void	print_menu(char **tests, int count)
 	int	i;
 
 	printf("\n");
-	printf("\033[1;32m========== libft tester ==========\033[0m\n");
-	printf("  \033[1;33mall\033[0m      - run all available mandatory tests\n");
-	printf("  \033[1;33mbonus\033[0m    - run all available bonus tests\n");
-	printf("  \033[1;33mlist\033[0m     - list available tests\n");
-	printf("  \033[1;33mexit\033[0m     - quit\n");
-	printf("\n");
-	printf("  Or enter a function name, e.g. \033[1;36mft_split\033[0m\n");
-	printf("\nAvailable tests:\n");
+	printf("\033[1;32m========== Libft Tester by Samercad! ==========\033[0m\n");
+	printf("  \033[1;33mall\033[0m        - run all available mandatory tests\n");
+	printf("  \033[1;33mbonus\033[0m      - run all available bonus tests\n");
+	printf("  \033[1;33mlist\033[0m       - list available tests\n");
+	printf("  \033[1;33mexit\033[0m       - quit\n");
+	printf("\n\033[1;34mAvailable tests:\033[0m\n");
 	i = 0;
 	while (i < count)
 	{
-		printf("  %s%s\n", tests[i], is_bonus(tests[i]) ? "  [bonus]" : "");
+		printf("  [\033[1;33m%2d\033[0m] %s%s\n", i + 1, tests[i],
+			is_bonus(tests[i]) ? "  [bonus]" : "");
 		i++;
 	}
 	printf("\n> ");
@@ -137,6 +141,16 @@ static void	print_list(char **tests, int count)
 	}
 }
 
+static void	wait_for_continue(void)
+{
+	char	buffer[128];
+
+	printf("\n\033[1;33mPress anything to continue...\033[0m");
+	fflush(stdout);
+	fgets(buffer, sizeof(buffer), stdin);
+	clear_screen();
+}
+
 int	main(void)
 {
 	char	*tests[MAX_TESTS];
@@ -144,6 +158,7 @@ int	main(void)
 	int		count;
 	int		i;
 	int		found;
+	int		wrong_attempts;
 
 	count = load_tests(tests);
 	qsort(tests, count, sizeof(*tests), cmp_tests);
@@ -153,9 +168,18 @@ int	main(void)
 		printf("Run: make tests\n");
 		return (1);
 	}
+	wrong_attempts = 0;
 	while (1)
 	{
-		print_menu(tests, count);
+		if (wrong_attempts == 0 || wrong_attempts >= 10)
+		{
+			print_menu(tests, count);
+			wrong_attempts = 0;
+		}
+		else
+		{
+			printf("> ");
+		}
 		if (!fgets(input, sizeof(input), stdin))
 			break ;
 		input[strcspn(input, "\n")] = '\0';
@@ -163,19 +187,28 @@ int	main(void)
 			break ;
 		if (strcmp(input, "list") == 0)
 		{
+			clear_screen();
 			print_list(tests, count);
+			wait_for_continue();
+			wrong_attempts = 0;
 			continue ;
 		}
 		if (strcmp(input, "all") == 0)
 		{
+			clear_screen();
 			printf("\n\033[1;34m--- mandatory ---\033[0m\n");
 			run_group(tests, count, 0);
+			wait_for_continue();
+			wrong_attempts = 0;
 			continue ;
 		}
 		if (strcmp(input, "bonus") == 0)
 		{
+			clear_screen();
 			printf("\n\033[1;34m--- bonus ---\033[0m\n");
 			run_group(tests, count, 1);
+			wait_for_continue();
+			wrong_attempts = 0;
 			continue ;
 		}
 		found = 0;
@@ -187,14 +220,31 @@ int	main(void)
 					&& strcmp(input, tests[i]) == 0))
 			{
 				found = 1;
+				clear_screen();
 				run_test(tests[i]);
+				wait_for_continue();
+				wrong_attempts = 0;
 				break ;
 			}
 			i++;
 		}
 		if (!found)
-			printf("\033[1;31mUnknown or unavailable test: %s\033[0m\n",
-				input);
+		{
+			int	test_num = atoi(input);
+			if (test_num > 0 && test_num <= count)
+			{
+				clear_screen();
+				run_test(tests[test_num - 1]);
+				wait_for_continue();
+				wrong_attempts = 0;
+			}
+			else
+			{
+				printf("\033[1;31mUnknown or unavailable test: %s\033[0m\n",
+					input);
+				wrong_attempts++;
+			}
+		}
 	}
 	free_tests(tests, count);
 	return (0);

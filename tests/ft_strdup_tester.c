@@ -22,10 +22,18 @@ int	main(void)
 {
 	int	passed;
 
+	printf("\n\033[1;36m      🧪 Testing ft_strdup Function     \033[0m\n\n");
+
 	passed = 0;
 	passed += test("hello");
 	passed += test("");
 	passed += test("42 Lisboa");
-	printf("%s: %d/3 tests passed\n", __func__, passed);
+
+	printf("\033[1;36m────────────────────────────────────────\033[0m\n");
+	if (passed == 3)
+		printf("\033[1;32m✨ All tests passed! (%d/3)\033[0m\n", passed);
+	else
+		printf("\033[1;33m⚠ Result: %d/3 tests passed\033[0m\n", passed);
+	printf("\033[1;36m────────────────────────────────────────\033[0m\n");
 	return (passed == 3);
 }

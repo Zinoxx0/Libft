@@ -5,6 +5,7 @@
 *.dylib
 *.dll
 *.exe
+libft_tester
 
 # Compiled binaries in tests directory
 tests/bin/

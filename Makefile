@@ -15,7 +15,7 @@ TEST_BINS	:= $(addprefix $(BIN_DIR)/,$(VALID_NAMES))
 
 .PHONY: all clean fclean re tests list
 
-all: $(NAME)
+all: $(NAME) tests
 
 $(NAME): main_tester.c
 	@$(CC) $(CFLAGS) -o $@ $<

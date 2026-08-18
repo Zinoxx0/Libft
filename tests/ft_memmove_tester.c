@@ -20,6 +20,8 @@ int main(void)
 	char	buf[32];
 	int		passed;
 
+	printf("\n\033[1;36m      🧪 Testing ft_memmove Function    \033[0m\n\n");
+
 	passed = 0;
 	memcpy(buf, "0123456789", 11);
 	ft_memmove(buf + 2, buf, 8);
@@ -29,6 +31,11 @@ int main(void)
 	ft_memmove(buf, buf + 2, 8);
 	passed += check("ft_memmove reverse overlap", buf, "cdefghijij");
 
-	printf("%s: %d/2 tests passed\n", __func__, passed);
+	printf("\033[1;36m────────────────────────────────────────\033[0m\n");
+	if (passed == 2)
+		printf("\033[1;32m✨ All tests passed! (%d/2)\033[0m\n", passed);
+	else
+		printf("\033[1;33m⚠ Result: %d/2 tests passed\033[0m\n", passed);
+	printf("\033[1;36m────────────────────────────────────────\033[0m\n");
 	return (passed == 2);
 }
