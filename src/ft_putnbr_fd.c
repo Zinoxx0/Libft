@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/08 19:02:42 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/08 19:03:04 by sezequie         ###   ########.fr       */
+/*   Created: 2026/08/18 22:47:33 by samercad          #+#    #+#             */
+/*   Updated: 2026/08/18 22:47:34 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

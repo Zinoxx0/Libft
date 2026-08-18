@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+         #
+#    By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/10/06 14:02:42 by sezequie          #+#    #+#              #
-#    Updated: 2023/10/10 15:49:01 by sezequie         ###   ########.fr        #
+#    Created: 2026/08/18 22:49:36 by samercad          #+#    #+#              #
+#    Updated: 2026/08/18 22:49:37 by samercad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:05:47 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/18 13:47:32 by sezequie         ###   ########.fr       */
+/*   Updated: 2026/08/18 22:46:18 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

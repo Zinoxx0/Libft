@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/08 18:47:31 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/18 13:55:17 by sezequie         ###   ########.fr       */
+/*   Created: 2026/08/18 22:48:44 by samercad          #+#    #+#             */
+/*   Updated: 2026/08/18 22:48:45 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

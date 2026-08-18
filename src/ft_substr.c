@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/06 15:37:32 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/18 13:56:14 by sezequie         ###   ########.fr       */
+/*   Created: 2026/08/18 22:49:11 by samercad          #+#    #+#             */
+/*   Updated: 2026/08/18 22:49:12 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/08 18:38:38 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/18 13:46:43 by sezequie         ###   ########.fr       */
+/*   Created: 2026/08/18 22:45:52 by samercad          #+#    #+#             */
+/*   Updated: 2026/08/18 22:45:53 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

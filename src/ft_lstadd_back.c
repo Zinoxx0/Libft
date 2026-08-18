@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:04:17 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/18 13:46:58 by sezequie         ###   ########.fr       */
+/*   Updated: 2026/08/18 22:46:06 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 15:50:31 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/05 15:50:31 by sezequie         ###   ########.fr       */
+/*   Created: 2026/08/18 22:45:42 by samercad          #+#    #+#             */
+/*   Updated: 2026/08/18 22:45:42 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

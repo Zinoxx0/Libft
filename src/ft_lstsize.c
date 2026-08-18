@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:00:30 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/09 19:00:37 by sezequie         ###   ########.fr       */
+/*   Updated: 2026/08/18 22:46:45 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

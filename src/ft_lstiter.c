@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:07:05 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/18 13:50:22 by sezequie         ###   ########.fr       */
+/*   Updated: 2026/08/18 22:46:29 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

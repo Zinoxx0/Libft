@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 18:17:32 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/18 13:52:46 by sezequie         ###   ########.fr       */
+/*   Updated: 2026/08/18 22:47:51 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

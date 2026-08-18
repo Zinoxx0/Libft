@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/06 17:43:37 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/18 13:56:04 by sezequie         ###   ########.fr       */
+/*   Created: 2026/08/18 22:49:07 by samercad          #+#    #+#             */
+/*   Updated: 2026/08/18 22:49:08 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 22:35:01 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/09 19:08:16 by sezequie         ###   ########.fr       */
+/*   Created: 2026/08/18 22:49:30 by samercad          #+#    #+#             */
+/*   Updated: 2026/08/18 22:49:31 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

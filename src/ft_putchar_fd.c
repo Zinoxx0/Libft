@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/08 18:57:00 by sezequie          #+#    #+#             */
-/*   Updated: 2023/10/20 23:25:09 by sezequie         ###   ########.fr       */
+/*   Created: 2026/08/18 22:47:25 by samercad          #+#    #+#             */
+/*   Updated: 2026/08/18 22:47:26 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
