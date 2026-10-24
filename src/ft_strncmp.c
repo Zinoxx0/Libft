@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_strncmp(const char *str1, char *str2, size_t n)
+int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	while (*str1 == *str2 && *str2 != '\0' && n > 0)
 	{
