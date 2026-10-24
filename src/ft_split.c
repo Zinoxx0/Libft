@@ -35,32 +35,50 @@ static	int	splitcount(const char *check, char c)
 	return (l);
 }
 
-char	**ft_split(char const *s, char c)
+static	char	**free_all(char **splitted, size_t n)
+{
+	while (n--)
+		free(splitted[n]);
+	free(splitted);
+	return (NULL);
+}
+
+static	char	**fill(char **splitted, char const *s, char c)
 {
 	int		o;
 	size_t	i;
 	size_t	p;
-	char	**splitted;
 
 	o = -1;
 	i = 0;
 	p = 0;
-	splitted = (char **)malloc(sizeof(char *) * (splitcount(s, c) + 1));
-	if (!splitted || !s)
-		return (NULL);
 	while (i <= ft_strlen(s))
 	{
 		if (s[i] != c && o < 0)
 			o = i;
 		else if ((s[i] == c || i == ft_strlen(s)) && o >= 0)
 		{
-			splitted[p++] = ft_substr(s, o, i - o);
+			splitted[p] = ft_substr(s, o, i - o);
+			if (!splitted[p++])
+				return (free_all(splitted, p));
 			o = -1;
 		}
 		i++;
 	}
 	splitted[p] = NULL;
 	return (splitted);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**splitted;
+
+	if (!s)
+		return (NULL);
+	splitted = (char **)malloc(sizeof(char *) * (splitcount(s, c) + 1));
+	if (!splitted)
+		return (NULL);
+	return (fill(splitted, s, c));
 }
 
 /*
