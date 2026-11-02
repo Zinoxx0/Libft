@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 19:04:42 by sezequie          #+#    #+#             */
-/*   Updated: 2026/08/18 22:46:23 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:59:29 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:59:30 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,23 @@ int main()
 	t_list *newvalue;
 	t_list *newvalue2;
 	t_list *newvalue3;
+	t_list *next;
 
-	lst = ft_lstnew("first");
-	newvalue = ft_lstnew("second");
-	newvalue2 = ft_lstnew("third");
-	newvalue3 = ft_lstnew("fourth");
+	lst = ft_lstnew(ft_strdup("first"));
+	newvalue = ft_lstnew(ft_strdup("second"));
+	newvalue2 = ft_lstnew(ft_strdup("third"));
+	newvalue3 = ft_lstnew(ft_strdup("fourth"));
 	ft_lstadd_back(&lst, newvalue);
 	ft_lstadd_back(&lst, newvalue2);
 	ft_lstadd_back(&lst, newvalue3);
+	next = lst->next;
 	ft_lstdelone(lst, free);
-	while (lst)
+	lst = next;
+	while (next)
 	{
-		printf("%s\n", lst->content);
-		lst = lst->next;
+		printf("%s\n", (char *)next->content);
+		next = next->next;
 	}
+	ft_lstclear(&lst, free);
 }
 */

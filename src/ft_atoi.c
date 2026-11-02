@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:44:45 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:44:45 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 12:00:32 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 12:00:32 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,19 @@
 
 int	ft_atoi(const char *str)
 {
-	int		n;
 	int		sign;
 	long	res;
 
-	n = 0;
 	sign = 1;
 	res = 0;
-	while (str[n] == ' ' || str[n] == '\t' || str[n] == '\n'
-		|| str[n] == '\v' || str[n] == '\f' || str[n] == '\r')
-		n++;
-	if (str[n] == '-' || str[n] == '+')
-	{
-		if (str[n] == '-')
-			sign = -1;
-		n++;
-	}
-	while (str[n] >= '0' && str[n] <= '9')
-	{
-		res = res * 10 + str[n] - '0';
-		n++;
-	}
+	while (*str == ' ' || (*str >= '\t' && *str <= '\r'))
+		str++;
+	if (*str == '-')
+		sign = -1;
+	if (*str == '-' || *str == '+')
+		str++;
+	while (*str >= '0' && *str <= '9')
+		res = res * 10 + *str++ - '0';
 	return (res * sign);
 }
 

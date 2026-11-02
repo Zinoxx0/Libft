@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:45:52 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:45:53 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:59:49 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:59:50 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_itoa(int n)
 	sign = 1;
 	if (n < 0)
 		sign = -1;
-	str = (char *)malloc(sizeof(char) * (len + 1));
+	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (0);
 	str[len] = '\0';
@@ -54,7 +54,12 @@ char	*ft_itoa(int n)
 /*
 int main()
 {
-	printf("%s\n", ft_itoa(-2147483648));
-	printf("%s\n", ft_itoa(2147483647));
+	char *min = ft_itoa(-2147483647 - 1);
+	char *max = ft_itoa(2147483647);
+
+	printf("%s\n", min);
+	printf("%s\n", max);
+	free(min);
+	free(max);
 }
 */

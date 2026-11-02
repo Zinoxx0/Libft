@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:47:57 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:47:57 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:58:14 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:58:14 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strchr(const char *str, int c)
 }
 
 /*
+#include <string.h>
+
 int main()
 {
 	char str[] = "1234567890";

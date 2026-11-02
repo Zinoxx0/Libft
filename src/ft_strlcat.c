@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:48:31 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:48:31 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:57:56 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:57:56 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int main()
 {
 	char dst[20] = "1234567890";
 	char source[20] = "1234567890";
-	printf("%lu\n", ft_strlcat(dst, source, 5));
+	printf("%zu\n", ft_strlcat(dst, source, 5));
 	printf("%s\n", dst);
 }
 */

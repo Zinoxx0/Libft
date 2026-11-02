@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:47:13 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:47:13 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:58:47 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:58:47 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 }
 
 /*
+#include <string.h>
+
 int main()
 {
 	char str1[] = "1234567890";
 	char str2[] = "1234567890";
-	printf("%s\n", ft_memmove(str1, str2, 5));
-	printf("%s\n", memmove(str1, str2, 5));
+	printf("%s\n", (char *)ft_memmove(str1, str2, 5));
+	printf("%s\n", (char *)memmove(str1, str2, 5));
 }
 */

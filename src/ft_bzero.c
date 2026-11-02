@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:44:53 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:44:53 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 12:00:23 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 12:00:23 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	ft_bzero(void *str, size_t n)
 }
 
 /*
+// "dirty" function, does not check for anything at all. deprecated by memset
 int main()
 {
 	char str[] = "1234567890";

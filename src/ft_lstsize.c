@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 19:00:30 by sezequie          #+#    #+#             */
-/*   Updated: 2026/08/18 22:46:45 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:59:05 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:59:06 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 unsigned int	ft_lstsize(t_list *lst)
 {
 	unsigned int	i;
-	t_list			*ptrlst;
 
 	i = 0;
-	ptrlst = lst;
-	while (ptrlst)
+	while (lst)
 	{
-		ptrlst = ptrlst->next;
+		lst = lst->next;
 		i++;
 	}
 	return (i);

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:49:20 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:49:20 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:56:36 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:56:36 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	ft_toupper(int c)
 }
 
 /*
+#include <ctype.h>
+
 int main()
 {
 	printf("%c\n", ft_toupper('a'));

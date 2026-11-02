@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:48:48 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:48:48 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:57:30 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:57:30 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 }
 
 /*
+#include <string.h>
+
 int main()
 {
 	char str1[] = "1234567890";

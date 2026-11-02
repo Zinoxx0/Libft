@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:48:01 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:48:01 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:58:08 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:58:08 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,9 @@ char	*ft_strdup(const char *str)
 int main()
 {
 	char *str = "1234567890";
-	printf("%s\n", ft_strdup(str));
+	char *result = ft_strdup(str);
+
+	printf("%s\n", result);
+	free(result);
 }
 */

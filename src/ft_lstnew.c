@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 18:56:00 by sezequie          #+#    #+#             */
-/*   Updated: 2026/08/18 22:46:42 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:59:09 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:59:10 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,9 @@ t_list	*ft_lstnew(void *content)
 // 	t_list	*new_list = ft_lstnew(&content_value);
 
 // 	if (new_list)
+// 	{
 // 		printf("List content: %d\n", *((int *)new_list->content));
+// 		free(new_list);
+// 	}
 // 	return 0;
 // }

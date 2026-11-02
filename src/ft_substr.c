@@ -6,7 +6,7 @@
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 22:49:11 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:49:12 by samercad         ###   ########.fr       */
+/*   Updated: 2026/11/02 11:56:57 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 int main()
 {
 	char *s = "1234567890";
-	printf("%s\n", ft_substr(s, 0, 5));
+	char *result = ft_substr(s, 0, 5);
+
+	printf("%s\n", result);
+	free(result);
 }
 */

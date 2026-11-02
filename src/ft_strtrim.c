@@ -6,7 +6,7 @@
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 22:49:07 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:49:08 by samercad         ###   ########.fr       */
+/*   Updated: 2026/11/02 11:57:04 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,9 @@ int main()
 {
 	char *s1 = "1234567890";
 	char *set = "1234567890";
-	printf("%s\n", ft_strtrim(s1, set));
+	char *result = ft_strtrim(s1, set);
+
+	printf("%s\n", result);
+	free(result);
 }
 */

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/06 18:17:32 by sezequie          #+#    #+#             */
-/*   Updated: 2026/08/18 22:47:51 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:58:18 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:58:19 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,11 +86,17 @@ int main()
 {
 	char str[] = "1234567890";
 	char **str2 = ft_split(str, '5');
-	printf("%s\n", str2[0]);
-	printf("%s\n", str2[1]);
-	printf("%s\n", str2[2]);
-	printf("%s\n", str2[3]);
-	printf("%s\n", str2[4]);
-	printf("%s\n", str2[5]);
+	int i;
+
+	if (!str2)
+		return (1);
+	i = 0;
+	while (str2[i])
+	{
+		printf("%s\n", str2[i]);
+		free(str2[i]);
+		i++;
+	}
+	free(str2);
 }
 */

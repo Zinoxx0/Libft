@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:45:10 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:45:10 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 12:00:10 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 12:00:10 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	ft_isalnum(int c)
 }
 
 /*
+#include <ctype.h>
+
 int main()
 {
 	printf("%d\n", ft_isalnum('a'));

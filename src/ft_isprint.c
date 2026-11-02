@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:45:47 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:45:47 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:59:53 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:59:53 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	ft_isprint(int c)
 }
 
 /*
+#include <ctype.h>
+
 int main()
 {
 	printf("%d\n", ft_isprint('a'));

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:48:26 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:48:28 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:58:00 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:58:01 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,9 @@ int main()
 {
 	char *s1 = "1234567890";
 	char *s2 = "1234567890";
-	printf("%s\n", ft_strjoin(s1, s2));
+	char *result = ft_strjoin(s1, s2);
+
+	printf("%s\n", result);
+	free(result);
 }
 */

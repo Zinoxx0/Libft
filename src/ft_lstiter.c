@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 19:07:05 by sezequie          #+#    #+#             */
-/*   Updated: 2026/08/18 22:46:29 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:59:24 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:59:25 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,9 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void	*))
 {
-	t_list	*ptrlst;
-
-	ptrlst = lst;
-	while (ptrlst)
+	while (lst)
 	{
-		f(ptrlst->content);
-		ptrlst = ptrlst->next;
+		f(lst->content);
+		lst = lst->next;
 	}
 }

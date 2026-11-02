@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:47:20 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:47:20 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:58:43 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:58:43 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,12 @@ void	*ft_memset(void *str, int c, size_t size)
 }
 
 /*
+#include <string.h>
+
 int main()
 {
 	char str[] = "1234567890";
-	printf("%s\n", ft_memset(str, 'a', 5));
-	printf("%s\n", memset(str, 'a', 5));
+	printf("%s\n", (char *)ft_memset(str, 'a', 5));
+	printf("%s\n", (char *)memset(str, 'a', 5));
 }
 */

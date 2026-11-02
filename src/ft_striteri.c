@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:48:20 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:48:22 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:58:04 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:58:05 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,16 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 }
 
 /*
+void	print_char(unsigned int i, char *c)
+{
+	(void)i;
+	ft_putchar_fd(*c, 1);
+}
+
 int main()
 {
 	char str[] = "1234567890";
-	ft_striteri(str, &ft_putchar_fd);
+	ft_striteri(str, &print_char);
+	ft_putchar_fd('\n', 1);
 }
 */

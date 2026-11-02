@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:48:57 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:48:57 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:57:25 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:57:25 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,5 @@ int main()
 	char str[] = "1234567890";
 	char to_find[] = "456";
 	printf("%s\n", ft_strnstr(str, to_find, 10));
-	printf("%s\n", strnstr(str, to_find, 10));
 }
 */

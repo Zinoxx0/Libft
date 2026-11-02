@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 22:48:44 by samercad          #+#    #+#             */
-/*   Updated: 2026/08/18 22:48:45 by samercad         ###   ########.fr       */
+/*   Created: 2026/11/02 11:57:41 by samercad          #+#    #+#             */
+/*   Updated: 2026/11/02 11:57:43 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,18 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 }
 
 /*
+char	upper_char(unsigned int i, char c)
+{
+	(void)i;
+	return (ft_toupper(c));
+}
+
 int main()
 {
-	char *s = "1234567890";
-	printf("%s\n", ft_strmapi(s, &ft_toupper));
+	char *s = "abcdefghij";
+	char *result = ft_strmapi(s, &upper_char);
+
+	printf("%s\n", result);
+	free(result);
 }
 */
