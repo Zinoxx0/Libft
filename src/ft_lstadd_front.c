@@ -12,12 +12,12 @@
 
 #include "libft.h"
 // Adds the element ’new’ at the beginning(head) of the list.
-void	ft_lstadd_front(t_list **lst, t_list *newvalue)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (lst && newvalue)
+	if (lst && new)
 	{
-		newvalue->next = *lst;
-		*lst = newvalue;
+		new->next = *lst;
+		*lst = new;
 	}
 }
 
