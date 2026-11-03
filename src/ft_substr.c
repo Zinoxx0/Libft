@@ -6,7 +6,7 @@
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 22:49:11 by samercad          #+#    #+#             */
-/*   Updated: 2026/11/02 11:56:57 by samercad         ###   ########.fr       */
+/*   Updated: 2026/11/03 13:43:44 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
-	char	*str;
+	char	*sub;
 	size_t	s_len;
 
 	s_len = ft_strlen(s);
@@ -23,18 +22,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (len > s_len - start)
 		len = s_len - start;
-	str = (char *)malloc(sizeof(char) * (len + 1));
-	if (str == NULL)
+	sub = malloc(len + 1);
+	if (!sub)
 		return (NULL);
-	i = 0;
-	while (i < len)
-	{
-		str[i] = s[start];
-		i++;
-		start++;
-	}
-	str[i] = '\0';
-	return (str);
+	ft_strlcpy(sub, s + start, len + 1);
+	return (sub);
 }
 
 /*
