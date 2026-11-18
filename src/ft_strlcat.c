@@ -33,11 +33,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 }
 
 /*
-int main()
+#include <stdio.h>
+
+int	main(void)
 {
-	char dst[20] = "1234567890";
-	char source[20] = "1234567890";
-	printf("%zu\n", ft_strlcat(dst, source, 5));
-	printf("%s\n", dst);
+	char	dst[10] = "abc";
+
+	printf("%zu\n", ft_strlcat(dst, "def", sizeof(dst)));  // 6
+	printf("%s\n", dst);                                   // abcdef
 }
 */

@@ -52,14 +52,14 @@ char	*ft_itoa(int n)
 }
 
 /*
-int main()
-{
-	char *min = ft_itoa(-2147483647 - 1);
-	char *max = ft_itoa(2147483647);
+#include <stdio.h>
 
-	printf("%s\n", min);
-	printf("%s\n", max);
-	free(min);
-	free(max);
+int	main(void)
+{
+	char	*s;
+
+	s = ft_itoa(-2147483647 - 1);
+	printf("%s\n", s);  // -2147483648
+	free(s);
 }
 */

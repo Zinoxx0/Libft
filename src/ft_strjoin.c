@@ -27,13 +27,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 }
 
 /*
-int main()
-{
-	char *s1 = "1234567890";
-	char *s2 = "1234567890";
-	char *result = ft_strjoin(s1, s2);
+#include <stdio.h>
 
-	printf("%s\n", result);
-	free(result);
+int	main(void)
+{
+	char	*s;
+
+	s = ft_strjoin("hello ", "world");
+	printf("%s\n", s);  // hello world
+	free(s);
 }
 */

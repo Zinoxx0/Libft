@@ -26,13 +26,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 }
 
 /*
-#include <string.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	char str1[] = "1234567890";
-	char str2[] = "1234567890";
-	printf("%d\n", ft_strncmp(str1, str2, 5));
-	printf("%d\n", strncmp(str1, str2, 5));
+	printf("%d\n", ft_strncmp("abcx", "abcy", 3));  // 0
 }
 */

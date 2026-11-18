@@ -29,12 +29,10 @@ char	*ft_strrchr(const char *s, int c)
 }
 
 /*
-#include <string.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	char str[] = "1234567890";
-	printf("%s\n", ft_strrchr(str, '0'));
-	printf("%s\n", strrchr(str, '0'));
+	printf("%s\n", ft_strrchr("hello", 'l'));  // lo
 }
 */

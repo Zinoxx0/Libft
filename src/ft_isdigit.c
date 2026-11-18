@@ -20,11 +20,10 @@ int	ft_isdigit(int c)
 }
 
 /*
-#include <ctype.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	printf("%d\n", ft_isdigit('a'));
-	printf("%d\n", isdigit('a'));
+	printf("%d %d\n", ft_isdigit('7'), ft_isdigit('a'));  // 1 0
 }
 */

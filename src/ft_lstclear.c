@@ -27,25 +27,16 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 }
 
 /*
-int main()
-{
-	t_list *lst;
-	t_list *newvalue;
-	t_list *newvalue2;
-	t_list *newvalue3;
+#include <stdio.h>
 
-	lst = ft_lstnew(ft_strdup("first"));
-	newvalue = ft_lstnew(ft_strdup("second"));
-	newvalue2 = ft_lstnew(ft_strdup("third"));
-	newvalue3 = ft_lstnew(ft_strdup("fourth"));
-	ft_lstadd_back(&lst, newvalue);
-	ft_lstadd_back(&lst, newvalue2);
-	ft_lstadd_back(&lst, newvalue3);
+// run with valgrind: no leaks
+int	main(void)
+{
+	t_list	*lst;
+
+	lst = ft_lstnew(ft_strdup("a"));
+	lst->next = ft_lstnew(ft_strdup("b"));
 	ft_lstclear(&lst, free);
-	while (lst)
-	{
-		printf("%s\n", (char *)lst->content);
-		lst = lst->next;
-	}
+	printf("%p\n", (void *)lst);  // (nil)
 }
 */

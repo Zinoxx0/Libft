@@ -38,10 +38,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 }
 
 /*
-int main()
+#include <stdio.h>
+
+int	main(void)
 {
-	char str[] = "1234567890";
-	char to_find[] = "456";
-	printf("%s\n", ft_strnstr(str, to_find, 10));
+	printf("%s\n", ft_strnstr("hello world", "wor", 11));  // world
 }
 */

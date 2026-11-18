@@ -6,7 +6,7 @@
 /*   By: samercad <samercad@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 22:49:30 by samercad          #+#    #+#             */
-/*   Updated: 2026/11/02 11:56:20 by samercad         ###   ########.fr       */
+/*   Updated: 2026/11/18 09:58:19 by samercad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h>
 
 typedef struct s_list
 {

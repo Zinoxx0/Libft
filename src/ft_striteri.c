@@ -28,16 +28,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 }
 
 /*
-void	print_char(unsigned int i, char *c)
+#include <stdio.h>
+
+void	upper(unsigned int i, char *c)
 {
 	(void)i;
-	ft_putchar_fd(*c, 1);
+	*c = ft_toupper(*c);
 }
 
-int main()
+int	main(void)
 {
-	char str[] = "1234567890";
-	ft_striteri(str, &print_char);
-	ft_putchar_fd('\n', 1);
+	char	s[] = "hello";
+
+	ft_striteri(s, upper);
+	printf("%s\n", s);  // HELLO
 }
 */

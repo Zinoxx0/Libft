@@ -27,13 +27,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 
 /*
-int main()
-{
-	char *s1 = "1234567890";
-	char *set = "1234567890";
-	char *result = ft_strtrim(s1, set);
+#include <stdio.h>
 
-	printf("%s\n", result);
-	free(result);
+int	main(void)
+{
+	char	*s;
+
+	s = ft_strtrim("--hi--", "-");
+	printf("%s\n", s);  // hi
+	free(s);
 }
 */

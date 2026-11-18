@@ -24,15 +24,15 @@ t_list	*ft_lstnew(void *content)
 	return (list);
 }
 
-// int	main(void)
-// {
-// 	int	content_value = 42;
-// 	t_list	*new_list = ft_lstnew(&content_value);
+/*
+#include <stdio.h>
 
-// 	if (new_list)
-// 	{
-// 		printf("List content: %d\n", *((int *)new_list->content));
-// 		free(new_list);
-// 	}
-// 	return 0;
-// }
+int	main(void)
+{
+	t_list	*node;
+
+	node = ft_lstnew("hello");
+	printf("%s %p\n", (char *)node->content, (void *)node->next);  // hello (nil)
+	free(node);
+}
+*/

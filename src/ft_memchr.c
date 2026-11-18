@@ -29,12 +29,10 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 
 /*
-#include <string.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	char str[] = "1234567890";
-	printf("%s\n", (char *)ft_memchr(str, '5', 5));
-	printf("%s\n", (char *)memchr(str, '5', 5));
+	printf("%s\n", (char *)ft_memchr("hello", 'l', 5));  // llo
 }
 */

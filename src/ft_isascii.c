@@ -20,11 +20,10 @@ int	ft_isascii(int c)
 }
 
 /*
-#include <ctype.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	printf("%d\n", ft_isascii('a'));
-	printf("%d\n", isascii('a'));
+	printf("%d %d\n", ft_isascii('a'), ft_isascii(200));  // 1 0
 }
 */

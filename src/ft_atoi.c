@@ -31,10 +31,10 @@ int	ft_atoi(const char *nptr)
 }
 
 /*
-int main()
+#include <stdio.h>
+
+int	main(void)
 {
-	char str[] = "  -1234567890";
-	printf("%d\n", ft_atoi(str));
-	printf("%d\n", atoi(str));
+	printf("%d\n", ft_atoi("  -42abc"));  // -42
 }
 */

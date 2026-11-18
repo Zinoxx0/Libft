@@ -31,12 +31,14 @@ char	*ft_strdup(const char *s)
 }
 
 /*
-int main()
-{
-	char *str = "1234567890";
-	char *result = ft_strdup(str);
+#include <stdio.h>
 
-	printf("%s\n", result);
-	free(result);
+int	main(void)
+{
+	char	*s;
+
+	s = ft_strdup("hello");
+	printf("%s\n", s);  // hello
+	free(s);
 }
 */

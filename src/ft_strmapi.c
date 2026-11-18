@@ -37,18 +37,20 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 }
 
 /*
-char	upper_char(unsigned int i, char c)
+#include <stdio.h>
+
+char	upper(unsigned int i, char c)
 {
 	(void)i;
 	return (ft_toupper(c));
 }
 
-int main()
+int	main(void)
 {
-	char *s = "abcdefghij";
-	char *result = ft_strmapi(s, &upper_char);
+	char	*s;
 
-	printf("%s\n", result);
-	free(result);
+	s = ft_strmapi("hello", upper);
+	printf("%s\n", s);  // HELLO
+	free(s);
 }
 */

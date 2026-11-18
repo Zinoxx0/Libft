@@ -26,25 +26,14 @@ void	*ft_calloc(size_t nmemb, size_t size)
 }
 
 /*
-int	main()
-{
-	size_t	num_elements = 5;
-	size_t	element_size = sizeof(int);
-	size_t	i;
+#include <stdio.h>
 
-	int *arr = ft_calloc(num_elements, element_size);
-	if (arr != NULL)
-	{
-		i = 0;
-		while (i < num_elements)
-		{
-			printf("%d ", arr[i]);
-			i++;
-		}
-		free(arr);
-	}
-	else
-		printf("Memory allocation failed\n");
-	return 0;
+int	main(void)
+{
+	int	*arr;
+
+	arr = ft_calloc(3, sizeof(int));
+	printf("%d %d %d\n", arr[0], arr[1], arr[2]);  // 0 0 0
+	free(arr);
 }
 */

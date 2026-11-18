@@ -21,11 +21,10 @@ int	ft_isalnum(int c)
 }
 
 /*
-#include <ctype.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	printf("%d\n", ft_isalnum('a'));
-	printf("%d\n", isalnum('a'));
+	printf("%d %d\n", ft_isalnum('a'), ft_isalnum('-'));  // 1 0
 }
 */

@@ -74,21 +74,20 @@ char	**ft_split(char const *s, char c)
 }
 
 /*
-int main()
-{
-	char str[] = "1234567890";
-	char **str2 = ft_split(str, '5');
-	int i;
+#include <stdio.h>
 
-	if (!str2)
-		return (1);
+int	main(void)
+{
+	char	**words;
+	int		i;
+
+	words = ft_split("  hello  world ", ' ');
 	i = 0;
-	while (str2[i])
+	while (words[i])
 	{
-		printf("%s\n", str2[i]);
-		free(str2[i]);
-		i++;
+		printf("%s\n", words[i]);  // hello, then world
+		free(words[i++]);
 	}
-	free(str2);
+	free(words);
 }
 */

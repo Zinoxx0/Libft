@@ -20,11 +20,10 @@ int	ft_tolower(int c)
 }
 
 /*
-#include <ctype.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	printf("%c\n", ft_tolower('A'));
-	printf("%c\n", tolower('A'));
+	printf("%c%c\n", ft_tolower('A'), ft_tolower('1'));  // a1
 }
 */

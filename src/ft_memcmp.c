@@ -31,13 +31,10 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 
 /*
-#include <string.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	char str1[] = "1234567890";
-	char str2[] = "1234567890";
-	printf("%d\n", ft_memcmp(str1, str2, 5));
-	printf("%d\n", memcmp(str1, str2, 5));
+	printf("%d\n", ft_memcmp("abc", "abd", 3));  // negative
 }
 */

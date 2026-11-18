@@ -20,11 +20,10 @@ int	ft_isprint(int c)
 }
 
 /*
-#include <ctype.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	printf("%d\n", ft_isprint('a'));
-	printf("%d\n", isprint('a'));
+	printf("%d %d\n", ft_isprint(' '), ft_isprint('\n'));  // 1 0
 }
 */

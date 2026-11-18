@@ -28,13 +28,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 }
 
 /*
-#include <string.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	char str1[] = "1234567890";
-	char str2[] = "1234567890";
-	printf("%s\n", (char *)ft_memmove(str1, str2, 5));
-	printf("%s\n", (char *)memmove(str1, str2, 5));
+	char	s[] = "abcdef";
+
+	ft_memmove(s + 2, s, 4);
+	printf("%s\n", s);  // ababcd (overlap handled)
 }
 */

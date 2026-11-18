@@ -27,10 +27,13 @@ void	ft_bzero(void *s, size_t n)
 
 /*
 // "dirty" function, does not check for anything at all. deprecated by memset
-int main()
+#include <stdio.h>
+
+int	main(void)
 {
-	char str[] = "1234567890";
-	ft_bzero(str, 5);
-	printf("%s\n", str);
+	char	s[] = "abcdef";
+
+	ft_bzero(s, 3);
+	printf("[%s] [%s]\n", s, s + 3);  // [] [def]
 }
 */

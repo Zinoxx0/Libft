@@ -20,11 +20,10 @@ int	ft_toupper(int c)
 }
 
 /*
-#include <ctype.h>
+#include <stdio.h>
 
-int main()
+int	main(void)
 {
-	printf("%c\n", ft_toupper('a'));
-	printf("%c\n", toupper('a'));
+	printf("%c%c\n", ft_toupper('a'), ft_toupper('1'));  // A1
 }
 */

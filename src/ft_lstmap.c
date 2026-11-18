@@ -38,47 +38,25 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 }
 
 /*
-void	*upper_copy(void *content)
-{
-	char	*copy;
-	int		i;
+#include <stdio.h>
 
-	copy = ft_strdup(content);
-	if (!copy)
-		return (NULL);
-	i = 0;
-	while (copy[i])
-	{
-		copy[i] = ft_toupper(copy[i]);
-		i++;
-	}
-	return (copy);
+void	*shout(void *s)
+{
+	return (ft_strjoin(s, "!"));
 }
 
-int main()
+int	main(void)
 {
-	t_list *lst;
-	t_list *newvalue;
-	t_list *newvalue2;
-	t_list *newvalue3;
-	t_list *mapped;
-	t_list *ptr;
+	t_list	*lst;
+	t_list	*map;
 
-	lst = ft_lstnew(ft_strdup("first"));
-	newvalue = ft_lstnew(ft_strdup("second"));
-	newvalue2 = ft_lstnew(ft_strdup("third"));
-	newvalue3 = ft_lstnew(ft_strdup("fourth"));
-	ft_lstadd_back(&lst, newvalue);
-	ft_lstadd_back(&lst, newvalue2);
-	ft_lstadd_back(&lst, newvalue3);
-	mapped = ft_lstmap(lst, upper_copy, free);
-	ptr = mapped;
-	while (ptr)
-	{
-		printf("%s\n", (char *)ptr->content);
-		ptr = ptr->next;
-	}
-	ft_lstclear(&mapped, free);
-	ft_lstclear(&lst, free);
+	lst = ft_lstnew("hi");
+	lst->next = ft_lstnew("yo");
+	map = ft_lstmap(lst, shout, free);
+	printf("%s\n", (char *)map->content);        // hi!
+	printf("%s\n", (char *)map->next->content);  // yo!
+	ft_lstclear(&map, free);
+	free(lst->next);
+	free(lst);
 }
 */
